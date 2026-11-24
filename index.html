@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dieuveille Beta-Beta</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background: #f4f7f5;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(135deg, #0a8f5b, #1fc28a);
+      color: white;
+      text-align: center;
+      padding: 2.5rem 1rem;
+      animation: apparition 1s ease;
+    }
+    header h1 { margin: 1rem 0 0.3rem; font-size: 1.8rem; }
+    header p { margin: 0; opacity: 0.9; }
+    .photo {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+    }
+    main {
+      max-width: 600px;
+      margin: -1.5rem auto 2rem;
+      padding: 0 1rem;
+    }
+    .carte {
+      background: white;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+      animation: apparition 1.2s ease;
+    }
+    h2 { color: #0a8f5b; margin-top: 0; }
+    .bouton {
+      display: inline-block;
+      background: #0a8f5b;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    @keyframes apparition {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="photo.jpg" alt="Dieuveille" class="photo">
+    <h1>Dieuveille Beta-Beta</h1>
+    <p>💻 Étudiant en informatique · a l'universite de Lumbumbashi</p>
+  </header>
+
+  <main>
+    <div class="carte">
+      <h2>À propos de moi</h2>
+      <p>Je m'appelle Dieuveille Beta-Beta, j'habite à Lubumbashi et je suis étudiant en informatique à l'Université de Lumbumbashi.</p>
+      <p>Je suis passionné par la technologie et j'apprends chaque jour à créer mes propres projets. Ce site est ma toute première réalisation !</p>
+      <a class="bouton" href="mailto:dieuveilbetabeta@gmail.com">✉️ Me contacter</a>
+    </div>
+  </main>
+</body>
+</html>
